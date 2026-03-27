@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PDF Novel Reader</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+    <header>
+      <button onclick="prevChapter()">⬅</button>
+      <h2 id="title">Chapter 1</h2>
+      <button onclick="nextChapter()">➡</button>
+    </header>
+
+    <div class="viewer">
+      <iframe id="pdfViewer"></iframe>
+    </div>
+
+    <div class="bottom-bar">
+      <input type="number" id="jumpInput" placeholder="Go to..." />
+      <button onclick="jumpChapter()">Go</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
